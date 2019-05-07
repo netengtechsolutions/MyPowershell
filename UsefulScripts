@@ -1,0 +1,4 @@
+#Join computer to a domain and restart
+Set-DnsClientServerAddress -InterfaceAlias Ethernet0 -ServerAddresses <address>
+add-computer –domainname ad.contoso.com -Credential AD\adminuser -restart –force
+
